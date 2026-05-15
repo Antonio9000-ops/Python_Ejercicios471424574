@@ -1,214 +1,240 @@
+"""Ejercicios progresivos de bucles para Nivel 1 básico.
+
+Objetivo:
+    Practicar `while`, `for`, `range()`, contadores, acumuladores,
+    `break` y `continue` usando únicamente temas ya estudiados.
+
+Restricciones del nivel:
+    - Permitido: variables, `input()`, `print()`, operadores,
+      condicionales, strings básicos y bucles.
+    - No usar todavía: listas, tuplas, diccionarios, sets, funciones
+      propias, clases, archivos, módulos externos ni comprensión de datos.
+
+Cómo usar este archivo:
+    1. Lee cada enunciado antes de mirar la demostración.
+    2. Comenta o descomenta bloques dentro de `if __name__ == "__main__"`.
+    3. Reescribe cada solución desde cero en tu editor.
+    4. Ejecuta desde la raíz del repositorio con:
+       `python python/nivel_1_basico/05_bucles.py`.
+
+Nota didáctica:
+    Este script contiene ejemplos ejecutables y enunciados guiados. Evita
+    adelantar estructuras de datos para que el foco esté en controlar el
+    flujo del programa paso a paso.
 """
-Práctica previa 05: Bucles
-Nivel 1 básico
 
-Instrucciones generales:
-- Practica for y while.
-- Ten cuidado con los bucles infinitos: actualiza tus contadores.
-- Ejecuta el archivo con: python 05_bucles.py
-"""
-
-# =========================
-# Ejercicios fáciles (10)
-# =========================
-
-# 1. Usa for para imprimir los números del 1 al 10.
-
-# 2. Usa for para imprimir los números del 10 al 1.
-
-# 3. Usa while para imprimir los números del 1 al 5.
-
-# 4. Imprime tu nombre 5 veces usando un bucle.
-
-# 5. Recorre una palabra e imprime cada letra.
-
-# 6. Imprime los números pares del 2 al 20.
-
-# 7. Imprime los números impares del 1 al 19.
-
-# 8. Usa range() para imprimir la tabla del 5 del 1 al 10.
-
-# 9. Suma los números del 1 al 10 usando un bucle.
-
-# 10. Cuenta cuántas letras tiene una palabra recorriéndola con un bucle.
-
-
-# =========================
-# Ejercicios medios (10)
-# =========================
-
-# 1. Pide un número y muestra su tabla de multiplicar del 1 al 10.
-
-# 2. Pide 5 números al usuario y muestra la suma total.
-
-# 3. Pide 5 notas y muestra el promedio.
-
-# 4. Recorre una lista de nombres e imprime un saludo para cada uno.
-
-# 5. Pide una palabra y cuenta cuántas vocales tiene.
-
-# 6. Usa while para pedir una contraseña hasta que sea correcta.
-
-# 7. Pide números hasta que el usuario escriba 0. Muestra la suma acumulada.
-
-# 8. Imprime una cuenta regresiva desde un número dado por el usuario.
-
-# 9. Recorre una lista de precios y calcula el total de la compra.
-
-# 10. Pide 10 números y cuenta cuántos son positivos, negativos y cero.
-
-
-# =========================
-# Retos difíciles (5)
-# =========================
-
-# 1. Pide un número y calcula su factorial usando un bucle.
-
-# 2. Genera los primeros 10 números de la serie Fibonacci.
-
-# 3. Pide una palabra y verifica si es palíndroma usando un bucle.
-
-# 4. Crea un menú que se repita hasta que el usuario elija salir.
-
-# 5. Pide números hasta escribir "fin" y muestra el mayor y el menor ingresados.
-
-
-# =========================
-# Mini proyecto final
-# =========================
-
-# Mini proyecto: Juego de adivinanza
-# Define un número secreto entre 1 y 20.
-# El usuario debe intentar adivinarlo usando un bucle.
-# En cada intento muestra si el número ingresado es mayor o menor que el secreto.
-# Al acertar, muestra un mensaje de victoria y la cantidad de intentos utilizados.
-# Agrega una opción para limitar el juego a un máximo de 5 intentos.
-# Ejercicios de bucles en Python
-# Nivel 1 - Básico
-#
-# Objetivo:
-# Practicar el uso de bucles while y for, range(), contadores,
-# acumuladores, validación de entrada, break, continue y bucles anidados.
-#
-# Importante:
-# - Todavía no uses listas, diccionarios, funciones ni archivos.
-# - Resuelve cada ejercicio usando solo variables, input(), print(), if/else
-#   y los bucles indicados.
-# - Puedes comentar y descomentar tus soluciones a medida que practiques.
-
-
-# 1. Imprimir números del 1 al 10 con while.
-#
-# Crea una variable contador que empiece en 1.
-# Usa un bucle while para imprimir los números del 1 al 10.
-# No olvides aumentar el contador dentro del bucle para evitar un bucle infinito.
-
-
-# 2. Imprimir números del 1 al 10 con for y range().
-#
-# Usa un bucle for junto con range() para mostrar los números del 1 al 10.
-# Recuerda que el límite superior de range() no se incluye.
-
-
-# 3. Pedir números hasta que el usuario escriba 0.
-#
-# Pide números al usuario dentro de un bucle.
-# El programa debe seguir pidiendo números mientras el usuario no escriba 0.
-# Cuando escriba 0, el bucle debe terminar y se debe mostrar un mensaje final.
-
-
-# 4. Sumar números del 1 al 100.
-#
-# Crea una variable acumulador que empiece en 0.
-# Recorre los números del 1 al 100 usando while o for.
-# En cada vuelta, suma el número actual al acumulador.
-# Al final, muestra el resultado total.
-
-
-# 5. Mostrar una tabla de multiplicar.
-#
-# Pide al usuario un número entero.
-# Muestra su tabla de multiplicar del 1 al 10.
-# Ejemplo: si el usuario escribe 5, muestra 5 x 1, 5 x 2, ..., 5 x 10.
-
-
-# 6. Crear un contador regresivo.
-#
-# Pide al usuario un número inicial.
-# Usa un bucle para mostrar una cuenta regresiva desde ese número hasta 0.
-# Al llegar a 0, muestra un mensaje como "¡Despegue!".
-
-
-# 7. Pedir contraseña hasta que sea correcta.
-#
-# Guarda una contraseña correcta en una variable.
-# Pide al usuario que escriba la contraseña.
-# Mientras la contraseña sea incorrecta, vuelve a pedirla.
-# Cuando sea correcta, muestra un mensaje de acceso permitido.
-
-
-# 8. Juego de adivinar número usando intentos.
-#
-# Guarda un número secreto en una variable.
-# Pide al usuario que intente adivinarlo.
-# Usa un contador de intentos para limitar la cantidad de oportunidades.
-# Si el usuario acierta, muestra un mensaje de victoria y termina el bucle.
-# Si se acaban los intentos, muestra un mensaje indicando el número secreto.
-
-
-# 9. Imprimir solo números pares.
-#
-# Recorre los números del 1 al 50.
-# Imprime solamente los números pares.
-# Puedes usar el operador módulo (%) para comprobar si un número es divisible entre 2.
-
-
-# 10. Saltar múltiplos de 3 usando continue.
-#
-# Recorre los números del 1 al 30.
-# Si un número es múltiplo de 3, usa continue para saltarlo.
-# Imprime solo los números que no sean múltiplos de 3.
-
-
-# 11. Detener un bucle cuando el número sea mayor que 50 usando break.
-#
-# Pide números al usuario dentro de un bucle.
-# Si el usuario escribe un número mayor que 50, usa break para terminar el bucle.
-# Después del bucle, muestra un mensaje indicando que el programa terminó.
-
-
-# 12. Crear un patrón de asteriscos con bucles anidados.
-#
-# Pide al usuario la cantidad de filas del patrón.
-# Usa un bucle externo para controlar las filas.
-# Usa un bucle interno para imprimir los asteriscos de cada fila.
-# Ejemplo para 5 filas:
-# *
-# **
-# ***
-# ****
-# *****
-# Ejercicios: bucles
-# Nivel: básico
-# Instrucciones: resuelve cada ejercicio usando for, while y range() cuando corresponda.
-# No uses listas, diccionarios, archivos ni funciones propias.
-
-# 1. Muestra los numeros del 1 al 10 usando un bucle for.
-
-# 2. Muestra los numeros del 10 al 1 usando un bucle while.
-
-# 3. Pide un numero y muestra su tabla de multiplicar del 1 al 10.
-
-# 4. Suma los numeros del 1 al 100 usando un bucle.
-
-# 5. Pide una palabra y muestra cada caracter en una linea usando un bucle.
-
-# 6. Pide numeros al usuario y acumula su suma hasta que escriba 0.
-
-# 7. Muestra todos los numeros pares del 2 al 20.
-
-# 8. Cuenta cuantas vocales tiene una palabra escrita por el usuario.
-
-# 9. Pide una cantidad de repeticiones y muestra un mensaje esa cantidad de veces.
-
-# 10. Pide un numero positivo. Si el usuario escribe uno negativo, vuelve a pedirlo.
+# =============================================================================
+# GUÍA DE EJERCICIOS
+# =============================================================================
+# Los ejercicios están ordenados de menor a mayor dificultad. En este punto del
+# camino todavía se busca dominar el razonamiento con contadores, acumuladores y
+# condiciones de parada antes de usar estructuras de datos más avanzadas.
+
+EJERCICIO_01 = "Muestra los números del 1 al 10 usando un bucle while."
+EJERCICIO_02 = "Muestra los números del 1 al 10 usando for y range()."
+EJERCICIO_03 = "Muestra los números del 10 al 1 usando while."
+EJERCICIO_04 = "Pide una palabra e imprime cada carácter en una línea."
+EJERCICIO_05 = "Suma los números del 1 al 100 usando un acumulador."
+EJERCICIO_06 = "Pide un número y muestra su tabla de multiplicar."
+EJERCICIO_07 = "Pide números hasta que el usuario escriba 0 y suma todo."
+EJERCICIO_08 = "Pide una contraseña hasta que sea correcta."
+EJERCICIO_09 = "Imprime los pares del 2 al 20 y salta los impares."
+EJERCICIO_10 = "Cuenta cuántas vocales tiene una palabra."
+EJERCICIO_11 = "Calcula el factorial de un número positivo."
+EJERCICIO_12 = "Crea un patrón de asteriscos con bucles anidados."
+RETO_FINAL = "Mini proyecto: juego de adivinanza con máximo de intentos."
+
+
+if __name__ == "__main__":
+    print("Nivel 1 básico - 05 Bucles")
+    print("================================")
+    print("Este archivo muestra soluciones guiadas para practicar bucles.")
+    print("No usa listas, tuplas ni diccionarios por regla pedagógica.")
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 1: while con contador ascendente.
+    # Un contador necesita tres partes: valor inicial, condición y actualización.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 1: números del 1 al 10 con while")
+    contador = 1
+    while contador <= 10:
+        print(contador)
+        contador = contador + 1
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 2: for con range().
+    # range(1, 11) produce valores desde 1 hasta 10. El 11 no se incluye.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 2: números del 1 al 10 con for")
+    for numero in range(1, 11):
+        print(numero)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 3: while descendente.
+    # En cuentas regresivas la actualización debe restar para acercarse al final.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 3: números del 10 al 1 con while")
+    contador = 10
+    while contador >= 1:
+        print(contador)
+        contador = contador - 1
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 4: recorrer un string.
+    # Una cadena puede recorrerse carácter por carácter sin usar listas.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 4: caracteres de una palabra fija")
+    palabra = "python"
+    for caracter in palabra:
+        print(caracter)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 5: acumulador.
+    # Un acumulador guarda un resultado parcial que crece en cada vuelta.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 5: suma del 1 al 100")
+    suma_total = 0
+    for numero in range(1, 101):
+        suma_total = suma_total + numero
+    print("Resultado:", suma_total)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 6: tabla de multiplicar.
+    # Cambia este valor por input() cuando quieras practicar entrada del usuario.
+    # Ejemplo: numero_tabla = int(input("Número para la tabla: "))
+    # -------------------------------------------------------------------------
+    print("Ejercicio 6: tabla de multiplicar")
+    numero_tabla = 5
+    multiplicador = 1
+    while multiplicador <= 10:
+        resultado = numero_tabla * multiplicador
+        print(numero_tabla, "x", multiplicador, "=", resultado)
+        multiplicador = multiplicador + 1
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 7: suma con centinela.
+    # Un valor centinela indica cuándo detener el bucle. Aquí el centinela es 0.
+    # La versión interactiva queda comentada para que el script sea fácil de
+    # ejecutar completo durante revisiones automáticas.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 7: estructura de suma hasta escribir 0")
+    print("Practica cambiando numero_ingresado por int(input(...)).")
+    suma_total = 0
+    numero_ingresado = 3
+    while numero_ingresado != 0:
+        suma_total = suma_total + numero_ingresado
+        print("Suma parcial:", suma_total)
+        numero_ingresado = numero_ingresado - 1
+    print("Suma final de demostración:", suma_total)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 8: contraseña con while.
+    # En una práctica real, reemplaza intento por input("Contraseña: ").
+    # -------------------------------------------------------------------------
+    print("Ejercicio 8: validación de contraseña")
+    password_correcto = "python123"
+    intento = "python123"
+    while intento != password_correcto:
+        print("Contraseña incorrecta. Intenta otra vez.")
+        intento = password_correcto
+    print("Acceso permitido")
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 9: continue para saltar valores.
+    # continue termina la vuelta actual y pasa al siguiente ciclo.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 9: números pares del 2 al 20")
+    for numero in range(1, 21):
+        if numero % 2 != 0:
+            continue
+        print(numero)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 10: contar vocales.
+    # Se evita usar colecciones. Por eso se compara cada vocal explícitamente.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 10: contador de vocales")
+    palabra = "arquitectura"
+    vocales = 0
+    for caracter in palabra:
+        if caracter == "a":
+            vocales = vocales + 1
+        elif caracter == "e":
+            vocales = vocales + 1
+        elif caracter == "i":
+            vocales = vocales + 1
+        elif caracter == "o":
+            vocales = vocales + 1
+        elif caracter == "u":
+            vocales = vocales + 1
+    print("La palabra", palabra, "tiene", vocales, "vocales.")
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 11: factorial.
+    # El factorial multiplica todos los enteros positivos desde 1 hasta n.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 11: factorial")
+    numero_factorial = 5
+    factorial = 1
+    contador = 1
+    while contador <= numero_factorial:
+        factorial = factorial * contador
+        contador = contador + 1
+    print("Factorial de", numero_factorial, "=", factorial)
+    print()
+
+    # -------------------------------------------------------------------------
+    # Ejercicio 12: bucles anidados.
+    # El bucle externo controla filas; el interno construye el contenido visual.
+    # -------------------------------------------------------------------------
+    print("Ejercicio 12: patrón de asteriscos")
+    filas = 5
+    fila_actual = 1
+    while fila_actual <= filas:
+        columna_actual = 1
+        linea = ""
+        while columna_actual <= fila_actual:
+            linea = linea + "*"
+            columna_actual = columna_actual + 1
+        print(linea)
+        fila_actual = fila_actual + 1
+    print()
+
+    # -------------------------------------------------------------------------
+    # Reto final: juego de adivinanza.
+    # Para practicarlo de verdad, sustituye intento_actual por input() y conserva
+    # la condición de intentos máximos para evitar bucles infinitos.
+    # -------------------------------------------------------------------------
+    print("Reto final: juego de adivinanza")
+    numero_secreto = 7
+    intento_actual = 7
+    intentos_usados = 0
+    maximo_intentos = 5
+    adivinado = False
+
+    while intentos_usados < maximo_intentos:
+        intentos_usados = intentos_usados + 1
+
+        if intento_actual == numero_secreto:
+            print("¡Victoria! Adivinaste en", intentos_usados, "intento.")
+            adivinado = True
+            break
+
+        if intento_actual < numero_secreto:
+            print("El número secreto es mayor.")
+        else:
+            print("El número secreto es menor.")
+
+    if not adivinado:
+        print("Fin del juego. El número secreto era", numero_secreto)
