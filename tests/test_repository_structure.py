@@ -30,11 +30,6 @@ def test_core_documentation_files_exist():
         ".gitignore",
         "python/README.md",
         "proyectos_retos/README.md",
-        "CONTRIBUTING.md",
-        "requirements.txt",
-        "Makefile",
-        ".github/workflows/python-app.yml",
-        "scripts/generar_ejercicio.py",
     ]
 
     for file_path in expected_files:

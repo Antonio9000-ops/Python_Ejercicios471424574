@@ -46,43 +46,15 @@ Este repositorio prioriza la progresión. Por ejemplo, en `python/nivel_1_basico
 
 La regla existe para que puedas explicar cada línea en una entrevista y evitar soluciones que dependen de herramientas que todavía no han sido estudiadas.
 
-## Automatización local
+## Tests automatizados
 
-Instala las dependencias de testing y ejecuta las verificaciones con `make`:
-
-```bash
-make setup
-make test
-```
-
-Si prefieres usar Python directamente:
+La carpeta `tests/` contiene verificaciones iniciales de calidad. Para ejecutarlas:
 
 ```bash
-python -m pip install -r requirements.txt
 python -m pytest
 ```
 
-La carpeta `tests/` contiene verificaciones iniciales de calidad. Los tests actuales validan estructura, documentación, restricciones del material básico y el generador de ejercicios. A medida que el repositorio crezca, añade pruebas para funciones, proyectos y casos de borde.
-
-## Generador de ejercicios
-
-Para crear una plantilla nueva de ejercicio sin repetir estructura manualmente, ejecuta:
-
-```bash
-python scripts/generar_ejercicio.py
-```
-
-Ejemplos de nombres válidos cuando el script lo solicite:
-
-- `08_funciones`
-- `nivel_1_basico/08_funciones`
-- `python/nivel_2_intermedio/01_funciones.py`
-
-El generador crea la carpeta necesaria, añade un archivo `.py` con docstring inicial y evita sobrescribir archivos existentes.
-
-## Integración continua
-
-El flujo `.github/workflows/python-app.yml` ejecuta `pytest` automáticamente en cada `push` y `pull_request` para mantener una barra de calidad constante.
+Los tests actuales validan estructura, documentación y restricciones del material básico. A medida que el repositorio crezca, añade pruebas para funciones, proyectos y casos de borde.
 
 ## Cómo abordar los retos
 
